@@ -6,7 +6,6 @@
     "points": 4,
     "visibility": 6,
     "ugliness": 0,
-    "bash_dmg_bonus": 1,
     "description": "You've grown plates of a smooth, hard chitin exoskeleton atop your leathery skin. It's pretty cool, in a horrifying murder-machine kinda way.",
     "types": [ "BODY_ARMOR" ],
     "cancels": [ "CHITIN3", "CHITIN2" ],
@@ -14,6 +13,20 @@
     "prereqs": [ "CHITIN" ],
     "leads_to": [ "CHITIN_FUR3" ],
     "integrated_armor": [ "BA_integrated_advancedChitin", "BA_integrated_clawsChitin" ],
+	"enchantments": 
+	  [ 
+	    { "condition": 
+		  { 
+		  "not": "u_has_weapon" }, 
+		  "values": 
+		   [ 
+		    { 
+			 "value": "ITEM_DAMAGE_BASH", 
+			 "add": 1 
+			 } 
+		   ] 
+		} 
+	  ],
     "wet_protection": [
       { "part": "head", "ignored": 2 },
       { "part": "leg_l", "ignored": 9 },
