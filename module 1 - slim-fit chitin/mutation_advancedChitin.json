@@ -13,21 +13,8 @@
     "prereqs": [ "CHITIN" ],
     "leads_to": [ "CHITIN_FUR3" ],
     "integrated_armor": [ "BA_integrated_advancedChitin", "BA_integrated_clawsChitin" ],
-	"enchantments": 
-	  [ 
-	    { "condition": 
-		  { 
-		  "not": "u_has_weapon" }, 
-		  "values": 
-		   [ 
-		    { 
-			 "value": "ITEM_DAMAGE_BASH", 
-			 "add": 1 
-			 } 
-		   ] 
-		} 
-	  ],
-    "wet_protection": [
+	"enchantments": [ { "condition": { "not": "u_has_weapon" }, "values": [ {  "value": "ITEM_DAMAGE_BASH",  "add": 1 } ] } ],
+    "wet_protection": [,
       { "part": "head", "ignored": 2 },
       { "part": "leg_l", "ignored": 9 },
       { "part": "leg_r", "ignored": 9 },
